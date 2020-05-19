@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body, html {
-height:100%;
-margin: 0;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body, html {
+        height:100%;
+        margin: 0;
+    }
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    </style>
 </head>
 
 <body>
-  <p>Hello wow</p>
-<img src="cp54dlegl1w21.jpg" style="width:100%; height:100%">
+    <div class="container">
+        <img id="WOWimg" src="https://i.redd.it/cp54dlegl1w21.jpg" style="width:100%; height:100%" onmousemove="showCoords(event)">
+        <map name="WOWmap">
+            <!--> Insert map area here <-->
+        </map>
 
+        <div class="top-left" id="coords"></div>
+
+        <script>
+            function showCoords(event) {
+                var x = event.clientX;
+                var y = event.clientY;
+                var coords = "X coords: " + x + ", Y coords: " + y;
+                document.getElementById("coords").innerHTML = coords;
+            }
+        </script>
+    </div>
 </body>
 
 </html>
