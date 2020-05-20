@@ -14,7 +14,7 @@
     }
     .top-left {
         position: absolute;
-        top: 8px;
+        top: 500px;
         left: 16px;
     }
     </style>
@@ -22,17 +22,78 @@
 
 <body>
     <div class="container">
-        <img id="WOWimg" src="https://i.redd.it/cp54dlegl1w21.jpg" style="width:1600px; height:900px" onmousemove="showCoords(event)">
-        <map name="WOWmap">
-            <!--> Insert map area here <-->
+        <img id="WOWimg" src="https://i.redd.it/cp54dlegl1w21.jpg" alt="World of Warcraft Map" usemap="#WOWmap" style="width:1600px; height:900px" onmousemove="showCoords(event)">
+        <map name="WOWmap" onmousemove="showCoords(event)">
+            <area shape="poly" title="Isle of Quel'Danas" target="_blank" coords="1321,201, 1332,201, 1344,158, 1339,151, 1310,151, 1304,161, 1306,173, 1316,181" href="https://wow.gamepedia.com/Isle_of_Quel%27Danas">
+
+            <area shape="poly" title="Quel'Thalas" target="_blank" coords="1319,220, 1313,211, 1300,205, 1292,209, 1290,229, 1296,231, 1302,226, 1309,227,
+             1294,245, 1283,269, 1287,276, 1322,281, 1365,277, 1367,258, 1373,251, 1351,217, 1344,214" href="https://wow.gamepedia.com/Quel%27Thalas">
+
+            <area shape="poly" title="Zul'Aman" target="_blank" coords="1292,278, 1292,289, 1285,287, 1284,337, 1293,341, 1330,334, 1347,354, 1362,360, 1368,372,
+            1376,350, 1381,345, 1397,343, 1407,311, 1389,302, 1373,290, 1366,276, 1333,281, 1319,284" href="https://wow.gamepedia.com/Zul%27Aman">
+
+            <area shape="poly" title="Eastern Plaguelands" target="_blank" coords="1332,338, 1301,342, 1270,339, 1258,342, 1277,393, 1284,394, 1290,406, 1342,410, 1366,405, 1372,391, 1370,369" href="https://wow.gamepedia.com/Eastern_Plaguelands">
+
+            <area shape="poly" title="Western Plaguelands" target="_blank" coords="1257,344, 1233,347, 1221,364, 1231,364, 1239,374, 1228,387, 1233,398, 1248,407, 1275,393, 1269,373" href="https://wow.gamepedia.com/Western_Plaguelands">
+
+            <area shape="poly" title="Caer Darrow" target="_blank" coords="1277,393, 1260,401, 1265,409, 1273,411, 1287,409, 1285,398" href="https://wow.gamepedia.com/Caer_Darrow">
+
+            <area shape="poly" title="Hinterlands" target="_blank" coords="1350,409, 1340,412, 1332,421, 1330,447, 1324,457, 1294,449, 1281,453, 1247,428, 1265,410, 1287,410" href="https://wow.gamepedia.com/Hinterlands">
+
+            <area shape="poly" title="Tirisfal Glades" target="_blank" coords="1219,356, 1202,357, 1195,351, 1177,355, 1175,369, 1163,363, 1138,373, 1137,392, 1146,403,
+            1160,404, 1224,397, 1237,375" href="https://wow.gamepedia.com/Tirisfal_Glades">
+
+            <area shape="poly" title="Arathi Highlands" target="_blank" coords="1333,437, 1312,495, 1257,495, 1237,476, 1259,447, 1282,457, 1298,451" href="https://wow.gamepedia.com/Arathi_Highlands">
+
+            <area shape="poly" title="Silverpine Forest+Hillsbrad" target="_blank" coords="1156,404, 1158,433, 1167,449, 1195,462, 1212,466, 1229,461, 1238,471, 1264,410, 1220,400, 1210,415,
+            1200,420, 1195,425, 1182,415, 1182,404" href="https://wow.gamepedia.com/Silverpine_Forest">
+
+            <area shape="poly" title="Fenris Isle" target="_blank" coords="1208,415, 1206,406, 1190,407, 1192,416, 1198,420" href="https://wow.gamepedia.com/Fenris_Isle">
+
+            <area shape="poly" title="Gilneas" target="_blank" coords="1164,450, 1141,454, 1137,480, 1157,498, 1180,499, 1192,480, 1188,466" href="https://wow.gamepedia.com/Gilneas_(kingdom)">
+
+            <area shape="poly" title="Kul'Tiras" target="_blank" coords="1078,462, 1101,472, 1098,486, 1115,496, 1109,514, 1084,515, 1078,495, 1070,487" href="https://wow.gamepedia.com/Kul_Tiras">
+            
+            <area shape="poly" title="Thandol Valley" target="_blank" coords="1254,498, 1309,499, 1327,516, 1311,541, 1274,553, 1231,539, 1234,508" href="https://wow.gamepedia.com/Thandol_Valley">
+
+            <area shape="poly" title="Vashj'ir" target="_blank" coords="1101,542, 1129,543, 1134,566, 1123,641, 1111,646, 1077,645, 1071,638, 1024,640,
+             1010,620, 1019,610, 1023,589, 1034,591, 1036,571, 1048,567, 1055,571, 1065,551, 1089,558, 1094,567" href="https://wow.gamepedia.com/Vashj%27ir">
+
+            <area shape="poly" title="Twilight Highlands" target="_blank" coords="1307,498, 1358,494, 1374,513, 1381,557, 1360,575, 1342,576, 1331,585, 1315,555, 1299,545, 1322,529" href="https://wow.gamepedia.com/Twilight_Highlands">
+
+            <area shape="poly" title="Dun Morogh" target="_blank" coords="1231,542, 1217,547, 1202,541, 1182,548, 1170,545, 1154,554, 1161,572, 1177,599, 1176,611, 1189,618, 1217,609, 1222,598, 1267,594, 1279,579, 1275,557, 1253,547" href="https://wow.gamepedia.com/Dun_Morogh">
+
+            <area shape="poly" title="Loch Modan" target="_blank" coords="1329,587, 1322,594, 1295,587, 1288,597, 1271,592, 1279,572, 1278,555, 1310,553" href="https://wow.gamepedia.com/Loch_Modan">
+
+            <area shape="poly" title="Badlands" target="_blank" coords="1325,597, 1338,611, 1329,631, 1315,636, 1269,626, 1262,609, 1269,596, 1287,597, 1297,591" href="https://wow.gamepedia.com/Badlands">
+
+            <area shape="poly" title="Searing Gorge" target="_blank" coords="1221,601, 1219,613, 1213,625, 1223,630, 1241,626, 1266,626, 1261,610, 1267,598" href="https://wow.gamepedia.com/Searing_Gorge">
+
+            <area shape="poly" title="Burning Steppes" target="_blank" coords="1218,630, 1177,626, 1166,635, 1173,637, 1183,632, 1206,635, 1224,641, 1231,654, 1249,661, 1263,653, 1297,657, 1298,635, 1264,626, 1253,623, 1237,627" href="https://wow.gamepedia.com/Burning_Steppes">
+
+            <area shape="poly" title="Red Ridge Mountains" target="_blank" coords="1299,657, 1310,665, 1310,685, 1269,689, 1255,683, 1253,667, 1267,657" href="https://wow.gamepedia.com/Redridge_Mountains">
+
+            <area shape="poly" title="Elwynn Forest" target="_blank" coords="1170,637, 1181,678, 1189,686, 1191,697, 1212,695, 1225,691, 1250,693, 1259,687, 1245,662, 1230,655, 1223,641, 1195,634" href="https://wow.gamepedia.com/Elwynn_Forest">
+            
+            <area shape="poly" title="area 9" target="_blank" coords="1181,682, 1169,682, 1156,698, 1157,721, 1174,734, 1201,728, 1202,724, 1190,693" href="">
+            <area shape="poly" title="area 10" target="_blank" coords="1194,701, 1203,724, 1249,721, 1250,694, 1221,694" href="">
+            <area shape="poly" title="area 11" target="_blank" coords="1311,682, 1322,690, 1323,709, 1314,720, 1301,711, 1273,713, 1267,690, 1295,691" href="">
+            <area shape="poly" title="area 12" target="_blank" coords="1313,722, 1308,734, 1315,736, 1313,756, 1305,761, 1282,768, 1266,769, 1265,728, 1251,721, 1251,695, 1261,687, 1271,690,
+            1271,714, 1295,712" href="">
+            <area shape="poly" title="area 13" target="_blank" coords="1268,771, 1239,784, 1226,780, 1210,762, 1197,767, 1173,747, 1176,735, 1202,731, 1229,729, 1249,726, 1264,735" href="">
+            <area shape="poly" title="area 14" target="_blank" coords="1197,767, 1189,781, 1191,805, 1202,823, 1223,817, 1223,805, 1209,805, 1225,781, 1210,762" href="">
+            <area shape="poly" title="area 15" target="_blank" coords="826,725, 853,724, 855,726, 874,725, 882,728, 884,741, 891,740, 905,777, 931,792, 943,812, 937,829, 943,852, 920,876, 895,887, 860,879, 830,880, 800,869, 798,856, 781,856, 
+            770,852, 765,837, 749,828, 747,798, 766,784, 770,773, 790,767, 786,743, 800,735, 799,728, 805,717, 814,716, 824,721" href="">
+            <area shape="poly" title="area 16"  target="_blank" coords="773,416, 740,418, 718,408, 707,388, 710,364, 718,349, 734,339, 746,337, 782,340, 794,348, 800,364, 802,378, 794,403, 814,398, 893,402, 919,416, 936,452, 936,500, 914,528, 
+            885,539, 823,542, 782,520, 758,464, 762,436" href="">
         </map>
 
         <div class="top-left" id="coords"></div>
 
         <script>
             function showCoords(event) {
-                var x = event.clientX;
-                var y = event.clientY;
+                var x = event.offsetX;
+                var y = event.offsetY;
                 var coords = "X coords: " + x + ", Y coords: " + y;
                 document.getElementById("coords").innerHTML = coords;
             }
